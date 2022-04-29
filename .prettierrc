@@ -1,0 +1,37 @@
+{
+  "overrides": [
+    {
+      "files": "*.ts",
+      "options": {
+        "singleQuote": true,
+        "trailingComma": "all",
+        "semi": true,
+        "importOrder": [
+          "<THIRD_PARTY_MODULES>",
+          "^@/(.*)$",
+          "^@/assets/(.*)$",
+          "^[./]"
+        ],
+        "importOrderSortSpecifiers": true,
+        "importOrderSeparation": true,
+        "importOrderParserPlugins": ["typescript"]
+      }
+    },
+    {
+      "files": "*.md",
+      "options": {
+        "printWidth": 70,
+        "useTabs": false,
+        "trailingComma": "none",
+        "arrowParens": "avoid",
+        "proseWrap": "never"
+      }
+    },
+    {
+      "files": "*.{json,babelrc,eslintrc,remarkrc,prettierrc}",
+      "options": {
+        "useTabs": false
+      }
+    }
+  ]
+}
